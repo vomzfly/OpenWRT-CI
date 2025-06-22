@@ -2,10 +2,10 @@
 CONFIG_PACKAGE_luci-app-homeproxy=y
 #增加插件
 CONFIG_PACKAGE_luci-app-autoreboot=y
-CONFIG_PACKAGE_luci-app-gecoosac=y
+CONFIG_PACKAGE_luci-app-gecoosac=n
 CONFIG_PACKAGE_luci-app-mini-diskmanager=y
 CONFIG_PACKAGE_luci-app-partexp=y
-CONFIG_PACKAGE_luci-app-samba4=y
+CONFIG_PACKAGE_luci-app-samba4=n
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-wolplus=y
 #删除插件
@@ -13,7 +13,7 @@ CONFIG_PACKAGE_luci-app-attendedsysupgrade=n
 CONFIG_PACKAGE_luci-app-wol=n
 #参数调整
 CONFIG_CCACHE=y
-CONFIG_DEVEL=y
+CONFIG_DEVEL=n
 CONFIG_FEED_video=n
 CONFIG_TARGET_MULTI_PROFILE=y
 CONFIG_TARGET_PER_DEVICE_ROOTFS=y
@@ -50,6 +50,7 @@ CONFIG_PACKAGE_kmod-nvme=y
 CONFIG_PACKAGE_kmod-ovpn-backports=y
 CONFIG_PACKAGE_kmod-sound-core=y
 CONFIG_PACKAGE_kmod-tun=y
+CONFIG_PACKAGE_kmod-usb2=y
 CONFIG_PACKAGE_kmod-usb3=y
 CONFIG_PACKAGE_kmod-usb-audio=y
 CONFIG_PACKAGE_kmod-usb-core=y
@@ -120,3 +121,12 @@ CONFIG_PACKAGE_usb-modeswitch=y
 CONFIG_PACKAGE_usbmuxd=y
 CONFIG_PACKAGE_usbutils=y
 CONFIG_PACKAGE_xz-utils=y
+# Printing
+CONFIG_PACKAGE_p910nd=y
+CONFIG_PACKAGE_kmod-usb-printer=y
+CONFIG_PACKAGE_luci-app-usb-printer=y
+# build sdk
+CONFIG_SDK=y
+# ntfs
+CONFIG_PACKAGE_kmod-fs-ntfs3=y
+CONFIG_PACKAGE_luci-app-ksmbd=y
