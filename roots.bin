@@ -1,0 +1,18 @@
+ZeroTier One version 1.16.2
+Copyright (c) ZeroTier, Inc.
+
+Licensed under a Source-Available License for Non-Commercial
+Use (nonfree/LICENSE.md). Use of this build for Commercial Use
+requires a paid subscription plan or a commercial license
+agreement with ZeroTier, Inc. Visit https://www.zerotier.com for
+more information.
+Usage: zerotier-idtool <command> [<args>]
+
+Commands:
+  generate [<identity.secret>] [<identity.public>] [<vanity>]
+  validate <identity.secret/public>
+  getpublic <identity.secret>
+  sign <identity.secret> <file>
+  verify <identity.secret/public> <file> <signature>
+  initmoon <identity.public of first seed>
+  genmoon <moon json>
